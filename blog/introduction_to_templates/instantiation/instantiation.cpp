@@ -1,3 +1,9 @@
+/*
+  Introduction to Templates : Instantiation
+
+	Simple example of a function template.
+*/
+
 #include <iostream>
 
 /* Function template that defines a generic groups of functions that take two
