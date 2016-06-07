@@ -6,12 +6,18 @@
 
 #include <iostream>
 
+/* Simple runtime function taking two integer paramters and returning their sum.
+ */
 int runtime_add(int a, int b) { return a + b; }
 
+/* Simple compile-time function taking two integer parameters and returning
+ * their sum. */
 template <int a, int b> struct compile_time_add {
   enum { value = (a + b) };
 };
 
+/* Simple compile-time function taking a type parameter and returning it as a
+ * pointer type. */
 template <typename t> struct as_ptr { using type = t *; };
 
 int main() {
